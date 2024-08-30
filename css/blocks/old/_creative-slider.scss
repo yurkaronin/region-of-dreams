@@ -1,0 +1,116 @@
+.creative-slider {
+  position: absolute;
+  right: -32px;
+  top: 0;
+  width: 736px;
+  height: 768px;
+
+  .swiper {
+    position: absolute;
+    width: 768px;
+    height: 552px;
+    z-index: 2;
+    top: 84px;
+  }
+
+  &__prev-photo {
+    position: absolute;
+    z-index: 0;
+    width: 224px;
+    height: 168px;
+    left: 128px;
+    top: 0;
+    transition: all 0.3s;
+  }
+
+  &__next-photo {
+    position: absolute;
+    z-index: 3;
+    width: 352px;
+    height: 264px;
+    right: 128px;
+    bottom: 0;
+    transition: all 0.3s;
+  }
+
+  .swiper-button {
+    width: 80px;
+    height: 80px;
+    margin-top: -40px;
+  }
+  .swiper-button-next {
+    right: 72px;
+  }
+  .swiper-button-prev {
+    left: 72px;
+  }
+
+  @media (max-width: 1379px) {
+    width: 688px;
+    height: 704px;
+    position: relative;
+    top: auto;
+    left: auto;
+    right: auto;
+    bottom: auto;
+
+    .swiper {
+      width: 688px;
+      height: 516px;
+      position: relative;
+    }
+    &__prev-photo {
+      width: 208px;
+      height: 156px;
+    }
+
+    &__next-photo {
+      width: 288px;
+      height: 216px;
+    }
+
+    .swiper-button-next {
+      right: 40px;
+    }
+    .swiper-button-prev {
+      left: 40px;
+    }
+  }
+
+  @media (max-width: 1023px) {
+    width: 100%;
+    .swiper {
+      width: 100%;
+    }
+  }
+  @media (max-width: 767px) {
+    height: 340px;
+    .swiper {
+      width: 100%;
+      height: 250px;
+      top: 37px;
+    }
+    &__prev-photo {
+      width: 102px;
+      height: 76px;
+      left: 58px;
+    }
+
+    &__next-photo {
+      width: 140px;
+      height: 105px;
+      right: 82px;
+    }
+    .swiper-button {
+      width: 50px;
+      height: 50px;
+      margin-top: -25px;
+    }
+    .swiper-button-next {
+      right: 15px;
+    }
+    .swiper-button-prev {
+      left: 15px;
+    }
+  }
+}

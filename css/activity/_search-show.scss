@@ -1,0 +1,18 @@
+.search-show {
+  .search__form {
+    opacity: 1;
+    pointer-events: initial;
+    visibility: initial;
+    width: 715px;
+    background-color: var(--white);
+  }
+
+  @media (max-width: 767px) {
+    .search__form {
+      width: 290px;
+    }
+    .button--search {
+      color: var(--black-text);
+    }
+  }
+}

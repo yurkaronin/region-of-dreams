@@ -1,0 +1,35 @@
+.advantages {
+
+  &__grid {
+    display: grid;
+    gap: 32px;
+    grid-template-columns: repeat(12, 1fr);
+    align-items: flex-start;
+  }
+
+  &__col {
+    grid-column: 7/13;
+  }
+  &__slider {
+    position: relative;
+    width: 100%;
+    grid-column: 1/6;
+    height: 768px;
+  }
+
+  @media (max-width: 1379px) {
+    &__grid {
+      display: block;
+    }
+
+    &__slider {
+      position: relative;
+      width: initial;
+      max-width: max-content;
+      margin: 0 auto;
+      height: initial;
+      margin-bottom: 40px;
+    }
+  }
+
+}

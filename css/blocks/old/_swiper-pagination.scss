@@ -1,0 +1,15 @@
+.swiper-pagination {
+  z-index: 1;
+
+
+  &-bullet {
+    transition: all 0.3s;
+    &:hover {
+      background-color: var(--blue);
+      border: 1px solid var(--blue);
+      scale: 2;
+    }
+  }
+
+
+}

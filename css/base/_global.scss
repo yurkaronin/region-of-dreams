@@ -1,0 +1,123 @@
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  height: 100%;
+  scrollbar-gutter: stable;
+  scroll-padding-top: var(--header-height);
+}
+
+html *,
+html *::before,
+html *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 375px;
+  position: relative;
+  overflow-x: hidden;
+  font-style: normal;
+  line-height: 1.4;
+  max-width: 100%;
+  width: 100%;
+  min-height: 2000px;
+
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--grey-07);
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  display: block;
+}
+
+figure {
+  margin-inline: 0;
+}
+
+// figcaption {
+//   margin-top: 0.5rem;
+//   font-weight: 400;
+//   font-size: 13px;
+//   line-height: 130%;
+//   color: var(--grey-text);
+//   font-style: italic;
+//   opacity: 0.7;
+// }
+
+input,
+textarea,
+a,
+select,
+button {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+}
+
+input,
+textarea {
+  max-width: 100%;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-family: inherit;
+  font-style: inherit;
+}
+
+address {
+  font-style: normal;
+  // font-family: var(--second-family);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+// Запрещаем изменение размеров текстового поля
+textarea {
+  resize: none;
+}
+
+// Чиним баг задержки смены цвета при взаимодействии с svg-элементами
+svg * {
+  transition-property: fill, stroke;
+}
+
+// отключаем ненужные элементы навигации на яндекс картах
+[class*="copyrights-pane"] {
+  display: none !important;
+}
+
+[data-simplebar] {
+  max-width: 100%; /* Задает максимальную ширину для скроллируемой области */
+  overflow-x: auto; /* Разрешает горизонтальный скролл */
+}
+
+.simplebar-scrollbar::before {
+  // background-color: var(--yellow);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--second-family);
+  // font-style: italic;
+  color: var(--grey);
+}

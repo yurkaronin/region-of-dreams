@@ -1,0 +1,34 @@
+.swiper-button {
+  background-color: transparent;
+  border: 1px solid var(--white);
+  border-radius: 50%;
+  width: var(--swiper-navigation-size);
+  height: var(--swiper-navigation-size);
+  z-index: 10;
+  cursor: pointer;
+  transition: all 0.3s;
+  &:hover {
+    background-color: var(--blue);
+    border: 1px solid var(--blue);
+  }
+
+  svg {
+    width: initial;
+    height: initial;
+  }
+  &::after,
+  &::before {
+    display: none;
+  }
+  &--mod {
+    border: 1px solid var(--lightblue);
+    color: var(--lightblue);
+
+    path {
+      stroke: currentColor;
+    }
+    &:hover {
+      color: var(--white);
+    }
+  }
+}

@@ -1,0 +1,138 @@
+.services-slider {
+  margin-bottom: 80px;
+
+  &__list {
+    display: flex;
+    gap: 32px;
+  }
+
+  &__item {
+    list-style: none;
+  }
+
+  &__image {
+    margin-bottom: 11px;
+  }
+
+  &__card-name {
+    margin: 0;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 160%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__card-name span {
+    font-style: italic;
+  }
+
+  &__price {
+    padding: 0;
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 200%;
+    color: #5b637b;
+  }
+
+  &__price span {
+    font-weight: 600;
+  }
+
+  &__price-name {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 213%;
+    letter-spacing: -0.01em;
+  }
+
+  &__price-name span {
+    font-weight: 600;
+  }
+
+  &__box {
+    display: flex;
+    gap: 16px;
+  }
+
+  .services-slider__box {
+    padding-top: 30px;
+    padding-bottom: 80px;
+  }
+
+  &__button {
+    color: #5b637b;
+    background: #fff;
+    border: 1px solid #5b637b;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 171%;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+
+  &__button:hover {
+    color: #fff;
+  }
+}
+
+@media (max-width: 1024px) {
+  .wrapper {
+    padding: 0 20px;
+  }
+
+  .services-slider__price {
+    font-size: 16px;
+    line-height: 200%;
+  }
+
+  .services-slider__list {
+    padding: 0;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .services-slider__image {
+    width: 448px;
+    margin-bottom: 11px;
+  }
+}
+
+@media (max-width: 375px) {
+  .services-slider__image {
+    width: 315px;
+    margin-bottom: 17px;
+  }
+
+  .services-slider__title {
+    font-size: 30px;
+    line-height: 117%;
+  }
+
+  .services-slider__price {
+    width: 310px;
+    line-height: 187%;
+  }
+
+  .services-slider__price-name {
+    font-size: 15px;
+    line-height: 213%;
+    letter-spacing: -0.01em;
+  }
+
+  .services-slider__box {
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .services-slider .services-slider__box {
+    margin: 0;
+    padding: 0;
+    padding-top: 21px;
+  }
+}

@@ -1,0 +1,44 @@
+.icon-move {
+  svg {
+    overflow: visible;
+  }
+  &__obj {
+    transform: translateX(0);
+    transition: transform 0.3s;
+  }
+
+}
+
+.icon-vert-move {
+  &__obj {
+    opacity: 0;
+    height: 0;
+    transition: all 0.3s;
+  }
+}
+
+a:hover {
+  .icon-vert-move__obj {
+    opacity: 1;
+    height: auto;
+  }
+}
+
+.button:hover {
+  .icon-move__obj {
+    transform: translateX(-8px);
+  }
+
+}
+
+.button.up {
+  .icon-move {
+    transform: rotate(-90deg);
+  }
+}
+
+.button.down {
+  .icon-move {
+    transform: rotate(90deg);
+  }
+}

@@ -1,0 +1,35 @@
+.menu-open {
+  overflow: hidden;
+
+  .mobile-nav {
+    right: 0;
+    // visibility: initial;
+    // opacity: initial;
+    // pointer-events: initial;
+  }
+
+  .menu-button  span {
+    background-color: transparent;
+  }
+
+  .menu-button  span:after {
+    transform: rotate(45deg);
+    width: 100%;
+    background-color: var(--white);
+  }
+
+  .menu-button  span:before {
+    transform: rotate(-45deg);
+    width: 100%;
+    background-color: var(--white);
+  }
+
+  @media (max-width: 1379px) {
+    .header {
+      background-color: var(--lightblue);
+    }
+    .header::after {
+      opacity: 0.3;
+    }
+  }
+}

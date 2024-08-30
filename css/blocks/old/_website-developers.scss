@@ -1,0 +1,27 @@
+.website-developers {
+  display: flex;
+  align-items: center;
+  &__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: var(--lightblue);
+    margin-right: 16px;
+    transition: all 0.3s;
+    &:hover {
+      scale: 1.1;
+    }
+  }
+
+  a {
+    color: var(--darkblue);
+    transition: all 0.3s;
+    &:hover {
+      color: inherit;
+      text-decoration: underline;
+    }
+  }
+}

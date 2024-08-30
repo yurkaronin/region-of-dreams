@@ -1,0 +1,30 @@
+.header-sticky {
+  // .header {
+  //   background-color: var(--lightblue);
+  // }
+  .logotype__scroll {
+    display: block;
+  }
+  .logotype__static {
+    display: none;
+  }
+
+  @media (min-width: 1380px) {
+    // .header__bottom {
+    //   opacity: 0;
+    //   display: none;
+    // }
+  }
+
+  @media (max-width: 1379px) {
+    // .header {
+    //   padding-top: 10px;
+    // }
+    // .header__logotype {
+    //   width: 60px;
+    // }
+    // .header::after {
+    //   opacity: 0.3;
+    // }
+  }
+}

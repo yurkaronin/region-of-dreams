@@ -1,0 +1,40 @@
+// .advantages-list {
+//   display: grid;
+//   gap: 42px 32px;
+//   grid-template-columns: repeat(3, 1fr);
+//   max-width: max-content;
+//   &--mod {
+//     grid-template-columns: repeat(2, 1fr);
+//   }
+
+
+//   &__icon {
+//     display: flex;
+//     width: 40px;
+//     height: 40px;
+//     margin-bottom: 15px;
+//     color: var(--lightblue);
+//     transition: all 0.3s;
+
+//     svg path {
+//       stroke: currentColor;
+//     }
+//   }
+//   &__text {
+//     margin: 0;
+//     font-family: var(--second-family);
+//     font-weight: 400;
+//     font-size: 16px;
+//     text-transform: uppercase;
+//     color: var(--darkblue);
+//   }
+
+//   &__item:hover &__icon {
+//     color: var(--blue);
+//   }
+
+//   @media (max-width: 767px) {
+//     grid-template-columns: repeat(2, 1fr);
+//     gap: 24px 16px;
+//   }
+// }

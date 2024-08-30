@@ -1,0 +1,52 @@
+.menu-button {
+  display: none;
+
+  @media (max-width: 1379px) {
+    display: flex;
+
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background: transparent;
+    // border: none;
+    width: 48px;
+    height: 48px;
+    border: 2px solid var(--white);
+    border-radius: 50%;
+
+    span,
+    span::after,
+    span::before {
+      flex-shrink: 0;
+      position: absolute;
+      width: 16px;
+      height: 2px;
+      // border-radius: 4px;
+      background-color: var(--white);
+    }
+
+    span::after,
+    span::before {
+      content: "";
+      display: block;
+      transition: 0.3s;
+    }
+
+    span::before {
+      -webkit-transform: translateY(-8px);
+      transform: translateY(-8px);
+      width: 12px;
+    }
+
+    span::after {
+      -webkit-transform: translateY(8px);
+      transform: translateY(8px);
+      width: 12px;
+    }
+  }
+  @media (max-width: 767px) {
+    width: 40px;
+    height: 40px;
+  }
+}

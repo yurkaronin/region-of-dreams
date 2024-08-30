@@ -1,0 +1,33 @@
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  max-width: 100%;
+  background-color: transparent;
+  color: var(--white);
+  transition: all 0.3s;
+
+  &__grid {
+    display: grid;
+    gap: 32px;
+    width: 100%;
+    max-width: 100%;
+    grid-template-columns: 208px 1fr 208px;
+    position: relative;
+    align-items: center;
+  }
+
+
+  @media (max-width: 1379px) {
+
+  }
+
+  @media (max-width: 1023px) {
+
+  }
+
+  @media (max-width: 767px) {
+
+  }
+}

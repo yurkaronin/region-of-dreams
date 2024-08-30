@@ -1,0 +1,127 @@
+.form {
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px 32px;
+    width: 100%;
+    max-width: 100%;
+  }
+  &__list {
+    display: grid;
+    gap: 0;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: max-content;
+  }
+
+  label {
+    display: block;
+    margin: 0;
+    margin-bottom: 6px;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--darkblue);
+  }
+
+  &__element {
+    input {
+      width: 100%;
+      max-width: 100%;
+      padding: 16px 24px;
+      overflow: hidden;
+      // outline: none;
+      border: 1px solid rgba(91, 99, 123, 0.3);
+      border-radius: 32px;
+      font-weight: 400;
+      font-size: 18px;
+      color: var(--grey);
+      transition: all 0.3s;
+      height: 56px;
+      &:hover {
+        border: 1px solid var(--grey);
+      }
+    }
+    ::placeholder {
+      color: inherit;
+      font-size: inherit;
+    }
+  }
+
+  &__agree {
+    font-weight: 400;
+    font-size: 14px;
+    color: #4a4a49;
+
+    label {
+      padding-left: 48px;
+      cursor: pointer;
+      position: relative;
+
+      &::before {
+        position: absolute;
+        top: -3px;
+        left: 0;
+        display: block;
+        content: "";
+        background-color: var(--white);
+
+        border: 1px solid #ced1d8;
+        border-radius: 6px;
+        width: 24px;
+        height: 24px;
+        transition: all 0.3s;
+      }
+      &::after {
+        position: absolute;
+        top: 4px;
+        left: 6px;
+        display: block;
+        width: 14px;
+        height: 10px;
+        transition: opacity 0.3s;
+        content: "";
+        opacity: 0;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='14' height='10' viewBox='0 0 14 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M1 5L5 9L13 1' stroke='%231D1D1B' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3e%3c/svg%3e ");
+      }
+
+      &:hover {
+        &::before {
+          border: 1px solid var(--grey);
+        }
+      }
+    }
+
+    input:checked + label::after {
+      opacity: 1;
+    }
+
+    a {
+      text-decoration: underline;
+      text-decoration-skip-ink: none;
+      color: var(--lightblue);
+    }
+  }
+
+
+  @media (max-width: 767px) {
+    &__grid {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 13px;
+    }
+
+    &__button {
+      margin: 0 auto;
+    }
+    &__element {
+      input {
+        font-size: 14px;
+        padding: 12px 20px;
+        height: 50px;
+      }
+    }
+    &__agree {
+      font-size: 14px;
+    }
+  }
+}

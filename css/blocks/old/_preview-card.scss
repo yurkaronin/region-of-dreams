@@ -1,0 +1,144 @@
+.preview-card {
+  &__image {
+    height: 408px;
+    width: 100%;
+    transition: all 0.3s;
+    &:hover {
+      scale: 1.05;
+    }
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__body {
+    padding-top: 32px;
+  }
+  &__title {
+    font-size: 40px;
+    color: var(--darkblue);
+    position: relative;
+    display: flex;
+    max-width: max-content;
+    align-items: center;
+    margin-bottom: 32px;
+
+    &:after {
+      content: "";
+      display: block;
+      width: 32px;
+      height: 2px;
+      background-color: var(--lightblue);
+      margin-left: 16px;
+      flex-shrink: 0;
+      transition: all 0.3s;
+    }
+    &:hover {
+      &:after {
+        background-color: var(--blue);
+        width: 40px;
+      }
+    }
+  }
+  &__list {
+    display: grid;
+    gap: 32px;
+    grid-template-columns: repeat(2, auto);
+    margin-bottom: 32px;
+  }
+  &__item {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: auto 1fr;
+  }
+  &__group {
+  }
+  &__text {
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--grey);
+  }
+  &__price {
+    display: block;
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--darkblue);
+  }
+
+  &__footer {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(2, auto);
+    max-width: max-content;
+  }
+  &__simple-list {
+    margin-bottom: 30px;
+    font-size: 16px;
+    color: var(--grey);
+
+    li {
+      margin-bottom: 8px;
+    }
+  }
+  &--mod {
+    .preview-card__image {
+      height: 336px;
+    }
+  }
+
+  @media (max-width: 1379px) {
+    &__image {
+      height: 250px;
+    }
+    &--mod {
+      .preview-card__image {
+        height: 336px;
+      }
+    }
+  }
+
+  @media (max-width: 1023px) {
+    &__image {
+      height: 390px;
+    }
+    &--mod {
+      .preview-card__image {
+        height: 300px;
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    &__body {
+      padding-top: 17px;
+    }
+    &__list {
+      display: grid;
+      gap: 18px;
+      grid-template-columns: repeat(1, 1fr);
+      margin-bottom: 20px;
+    }
+    &__image {
+      height: 190px;
+    }
+    &__title {
+      font-size: 30px;
+      &:after {
+        width: 28px;
+        margin-left: 12px;
+      }
+    }
+    &__footer {
+      gap: 10px;
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    &--mod {
+      .preview-card__image {
+        height: 205px;
+      }
+    }
+  }
+}

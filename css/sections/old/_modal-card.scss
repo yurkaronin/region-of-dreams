@@ -1,0 +1,84 @@
+.modal-card {
+  width: 832px;
+  padding: 48px 40px;
+
+  &__disclaimer {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 178%;
+    color: #5b637b;
+    margin-bottom: 25px;
+  }
+
+  &__label {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 200%;
+    color: 000223;
+  }
+
+  &__title {
+    font-style: normal;
+  }
+
+  &__input {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 178%;
+    color: #5b637b;
+  }
+
+  &__checkbox {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 143%;
+    color: #4a4a49;
+  }
+
+  &__link {
+    color: #03b6fc;
+    text-decoration: underline;
+  }
+
+  &__link:hover {
+    color: var(--blue);
+  }
+
+  &__input {
+    padding: 10px 24px 14px;
+    margin-bottom: 49px;
+    border-radius: 32px;
+    border: 1px solid var(--grey);
+  }
+
+  &__box {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__label {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 200%;
+    color: var(--darkblue);
+    margin-bottom: 6px;
+    width: 353px;
+  }
+
+  &__column {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__checkbox {
+    margin-right: 8px;
+  }
+}

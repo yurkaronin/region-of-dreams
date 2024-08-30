@@ -1,0 +1,37 @@
+.custom-link {
+  display: grid;
+  gap: 8px;
+  align-items: center;
+  max-width: max-content;
+  grid-template-columns: 1fr auto;
+  transition: all 0.3s;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--lightblue);
+
+  &__icon {
+    width: 24px;
+    height: 18px;
+    // transition: all 0.3s;
+    svg {
+      overflow: visible;
+    }
+    path {
+      stroke: currentColor;
+      // transition: all 0.3s;
+    }
+
+  }
+  &__move {
+    transform: translateX(0);
+    transition: transform 0.3s;
+  }
+
+
+  &:hover {
+    color: var(--blue);
+  }
+  &:hover &__move {
+    transform: translateX(8px);
+  }
+}

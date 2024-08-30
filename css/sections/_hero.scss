@@ -1,0 +1,20 @@
+.hero {
+  position: relative;
+  min-height: 100vh;
+  color: #ffffff;
+  background-color: #000000;
+  background-image: url(../img/hero/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+
+  @media (max-width: 1379px) {
+  }
+
+  @media (max-width: 1023px) {
+  }
+
+  @media (max-width: 767px) {
+  }
+
+}

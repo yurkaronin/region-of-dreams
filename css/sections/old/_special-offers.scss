@@ -1,0 +1,56 @@
+.special-offers {
+  background: #f3f8fe;
+  margin-bottom: 50px;
+
+  &__description {
+    margin: 0;
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    list-style: none;
+  }
+
+  &__card {
+    position: relative;
+  }
+
+  &__box {
+    width: max-content;
+    text-align: center;
+    position: absolute;
+    top: 70%;
+    right: 50%;
+    transform: translate(50%, -50%);
+  }
+
+  &__card-name {
+    align-items: center;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 117%;
+    color: #fff;
+    margin-bottom: 24px;
+  }
+
+  &__disclaimer {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 133%;
+    color: #fff;
+    width: 800px;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .special-offers__title {
+    display: flex;
+    flex-direction: column;
+  }
+}
