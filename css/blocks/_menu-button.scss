@@ -45,8 +45,6 @@
     width: 32px;
   }
 
-
-
   @media (max-width: 767px) {
     width: 40px;
     height: 40px;
@@ -54,19 +52,23 @@
 }
 
 .menu-button-group {
-  position: relative;
-  height: 100%;
-  width: 100%;
-  &__label {
-    position: absolute;
-    font-weight: 700;
-    font-size: 13px;
-    text-transform: uppercase;
-    color: var(--white);
-    text-align: center;
-    bottom: 12px;
-    left: 0;
-    width: 100%;
+  display: none;
 
+  @media (max-width: 1504px) {
+    display: block;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    &__label {
+      position: absolute;
+      font-weight: 700;
+      font-size: 13px;
+      text-transform: uppercase;
+      color: var(--white);
+      text-align: center;
+      bottom: 12px;
+      left: 0;
+      width: 100%;
+    }
   }
 }

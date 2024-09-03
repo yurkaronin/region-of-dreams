@@ -1,0 +1,25 @@
+.mobile-contacts {
+  margin-top: auto;
+  &__link {
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: var(--white);
+    border-top: 1px solid var(--white-03);
+    height: 55px;
+    align-items: center;
+    &--icon {
+      font-weight: 500;
+      font-size: 14px;
+      text-align: right;
+      display: grid;
+      gap: 12px;
+      grid-template-columns: auto auto;
+    }
+  }
+}
