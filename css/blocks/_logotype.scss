@@ -1,11 +1,12 @@
 .logotype {
   display: flex;
-  padding: 32px 40px;
   justify-content: center;
   align-items: center;
   color: #c49156;
   transition: all 0.3s;
-  height: 120px;
+  position: relative;
+  width: 100%;
+  height: 100%;
 
   &__scroll {
     display: none;
@@ -13,13 +14,31 @@
   }
   &__static {
     position: absolute;
+
+  }
+  &__mobile {
+    display: none;
   }
 
-  path {
-    fill: currentColor;
-  }
+
   &:hover {
     color: var(--light-gold);
     padding: 15px 40px;
+    path {
+      fill: currentColor;
+    }
+  }
+
+  @media (max-width: 767px) {
+    &__scroll {
+      display: none !important;
+    }
+    &__static {
+      display: none !important;
+    }
+    &__mobile {
+      display: block;
+      padding: 7px 0 0;
+    }
   }
 }

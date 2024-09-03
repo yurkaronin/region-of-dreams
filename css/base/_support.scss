@@ -41,6 +41,10 @@ input[type="radio"].visually-hidden {
   margin: 0;
 }
 
+.social {
+  transition: all 0.3s;
+}
+
 /* Скрывает элементы на экранах с максимальной шириной 767px */
 @media (max-width: 767px) {
   .mobile-hide {

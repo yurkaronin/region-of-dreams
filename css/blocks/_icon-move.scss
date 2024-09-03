@@ -10,6 +10,7 @@
 }
 
 .icon-vert-move {
+  transition: all 0.3s;
   &__obj {
     opacity: 0;
     height: 0;
