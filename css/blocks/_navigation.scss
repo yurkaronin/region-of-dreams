@@ -31,6 +31,22 @@
     position: relative;
   }
 
+  &__icon {
+    position: absolute;
+    top: -26px;
+    left: 50%;
+    color: var(--gold);
+    transition: all 0.3s;
+    path {
+      stroke: currentColor;
+    }
+  }
+
+  &__text {
+    position: relative;
+    z-index: 2;
+  }
+
   &__link {
     display: flex;
     max-width: 100%;
@@ -39,7 +55,7 @@
     justify-content: center;
     text-align: center;
     text-decoration: none;
-    padding-top: 16px;
+    padding-top: 14px;
     padding-bottom: 16px;
     padding-inline: 20px;
     // min-height: 56px;
@@ -51,27 +67,20 @@
     font-size: 13px;
     text-transform: uppercase;
     color: var(--white);
-
-    span {
-      position: relative;
-      z-index: 2;
-    }
-
-
     &:hover,
     &:active,
     &:focus {
-      // background-color: var(--blue);
+
+      .navigation__icon {
+        color: var(--light-gold);
+
+
+
+      }
     }
   }
 
-  &__icon {
-    position: absolute;
-    top: 20px;
-    left: 50%;
 
-
-  }
 
   // &__item:not(:last-of-type) &__link:after {
   //   content: "";

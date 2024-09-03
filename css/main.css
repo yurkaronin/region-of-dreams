@@ -614,6 +614,7 @@ a:hover .icon-vert-move__obj {
   color: #c49156;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  height: 120px;
 }
 .logotype__scroll {
   display: none;
@@ -656,6 +657,21 @@ a:hover .icon-vert-move__obj {
           justify-content: center;
   position: relative;
 }
+.navigation__icon {
+  position: absolute;
+  top: -26px;
+  left: 50%;
+  color: var(--gold);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.navigation__icon path {
+  stroke: currentColor;
+}
+.navigation__text {
+  position: relative;
+  z-index: 2;
+}
 .navigation__link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -670,7 +686,7 @@ a:hover .icon-vert-move__obj {
           justify-content: center;
   text-align: center;
   text-decoration: none;
-  padding-top: 16px;
+  padding-top: 14px;
   padding-bottom: 16px;
   padding-inline: 20px;
   -webkit-transition: all 0.3s;
@@ -682,14 +698,8 @@ a:hover .icon-vert-move__obj {
   text-transform: uppercase;
   color: var(--white);
 }
-.navigation__link span {
-  position: relative;
-  z-index: 2;
-}
-.navigation__icon {
-  position: absolute;
-  top: 20px;
-  left: 50%;
+.navigation__link:hover .navigation__icon, .navigation__link:active .navigation__icon, .navigation__link:focus .navigation__icon {
+  color: var(--light-gold);
 }
 
 .header {
@@ -705,7 +715,7 @@ a:hover .icon-vert-move__obj {
 }
 .header__grid {
   display: grid;
-  gap: 32px;
+  gap: 0;
   width: 100%;
   max-width: 100%;
   grid-template-columns: 208px 1fr 208px;

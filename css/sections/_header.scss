@@ -10,7 +10,8 @@
 
   &__grid {
     display: grid;
-    gap: 32px;
+    // gap: 32px;
+    gap: 0;
     width: 100%;
     max-width: 100%;
     grid-template-columns: 208px 1fr 208px;
