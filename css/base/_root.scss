@@ -23,6 +23,7 @@
 
   --grey: #333441;
   --grey-07: rgba(51, 52, 65, 0.7);
+  --grey-06: rgba(51, 52, 65, 0.6);
 
   --gold: #c08f53;
   --white: #fff;
@@ -44,17 +45,17 @@
   // --swiper-pagination-bullet-inactive-opacity: 1;
   // --swiper-pagination-bottom: 80px;
 
-  // @media (max-width: 1379px) {
-  //   --swiper-navigation-size: 80px;
-  //   --swiper-pagination-bottom: 32px;
-  // }
+  @media (max-width: 1379px) {
+    --swiper-navigation-size: 80px;
+    // --swiper-pagination-bottom: 32px;
+  }
 
   // @media (max-width: 1023px) {
   //   --swiper-navigation-size: 70px;
   // }
 
-  // @media (max-width: 767px) {
-  //   --swiper-navigation-size: 50px;
-  //   --swiper-pagination-bottom: 33px;
-  // }
+  @media (max-width: 767px) {
+    --swiper-navigation-size: 60px;
+    // --swiper-pagination-bottom: 33px;
+  }
 }
