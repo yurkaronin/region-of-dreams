@@ -1,0 +1,24 @@
+.buttons-group {
+  display: grid;
+  gap: 0;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: max-content;
+  max-height: max-content;
+
+  .swiper-button {
+    position: initial;
+    margin: 0;
+    transform: none;
+  }
+  .swiper-button  {
+    border-top: none;
+  }
+
+  &--vertical {
+    grid-template-columns: repeat(1, 1fr);
+
+    // .swiper-button  {
+    //   border-top: 1px solid var(--white-03);
+    // }
+  }
+}

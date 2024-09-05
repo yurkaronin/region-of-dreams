@@ -28,9 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Поддержка тачпада
     touchpadSupport: true,
   });
-
 });
-
 
 // техническая часть - УДАЛИТЬ НА ПРОДАКШЕНЕ!
 // получить в консоли элемент, по которому кликнули

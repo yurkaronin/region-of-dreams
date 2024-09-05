@@ -28,10 +28,10 @@
 
             <span class="logotype__static">
               <svg width="112" height="49" viewBox="0 0 112 49" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
+                <path class="logotype__vector"
                   d="M59.2603 11.9275V21.1517H33.129V13.1392L54.051 3.58933L46.1979 0L26.5945 8.95054V27.6724H65.8013V8.95054L59.2603 11.9275Z"
                   fill="#C49156" />
-                <path
+                <path class="logotype__vector"
                   d="M65.8022 0L46.1987 8.95054V19.5361H52.7332V13.1392L65.8022 7.17216L78.8711 13.1392V21.1517H67.4211V27.6724H85.399V8.95054L65.8022 0Z"
                   fill="#C49156" />
                 <path
@@ -73,10 +73,10 @@
 
             <span class="logotype__scroll">
               <svg width="68" height="32" viewBox="0 0 68 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
+                <path class="logotype__vector"
                   d="M37.3324 13.6315V24.1733H7.46797V15.0162L31.3789 4.10209L22.4039 0L0 10.2292V31.6256H44.8078V10.2292L37.3324 13.6315Z"
                   fill="#C49156" />
-                <path
+                <path class="logotype__vector"
                   d="M44.8083 0L22.4044 10.2292V22.327H29.8723V15.0162L44.8083 8.19674L59.7442 15.0162V24.1733H46.6585V31.6256H67.2047V10.2292L44.8083 0Z"
                   fill="#C49156" />
               </svg>
@@ -335,7 +335,63 @@
   <!-- основной контент  -->
   <main class="main">
     <section class="hero">
-      <div class="wrapper"></div>
+
+      <div class="hero__top">
+        <div class="hero-slide">
+          <div class="wrapper">
+            <div class="hero-slide__bg">
+              <img src="./img/hero/bg.jpg" alt="#" loading="lazy">
+            </div>
+
+            <div class="hero-slide__group custom-grid">
+              <div class="custom-grid__col">
+                <h2 class="hero__title title">Регион Мечты – строительство, недвижимость, инвестиции!</h2>
+              </div>
+              <div class="custom-grid__col">
+                <p class="hero__text">Слаженная команда профессионалов, которые любят свое дело! Строим каменные дома для
+                  Вашей комфортной жизни.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__bottom">
+        <div class="wrapper">
+          <div class="custom-grid">
+
+            <div class="custom-grid__col">
+              <span class="big">2015</span>
+              <p class="hero__text">Год основания нашей компании, мы строим дома для Вас уже 9 лет!</p>
+            </div>
+
+            <div class="custom-grid__col">
+              <div class="buttons-group buttons-group--vertical">
+
+                <button class="swiper-button swiper-button-prev" type="button">
+                  <svg width="26" height="10" viewBox="0 0 26 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 9L2 5M2 5L6 1M2 5L26 5" stroke="white" stroke-width="2" />
+                  </svg>
+
+                </button>
+
+                <button class="swiper-button swiper-button-next" type="button">
+                  <svg width="26" height="10" viewBox="0 0 26 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20 1L24 5M24 5L20 9M24 5L-1.74846e-07 5" stroke="white" stroke-width="2" />
+                  </svg>
+
+                </button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+
+
+
     </section>
     <section class="section">
       <div class="wrapper">

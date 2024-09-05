@@ -25,6 +25,7 @@
     width: 100%;
     max-width: 100%;
     padding-inline: 16px;
+    min-height: 60px;
     &::before {
       transform: none;
       border-top: none;
@@ -50,7 +51,6 @@
   &__logotype {
     border-right: 1px solid var(--white-03);
     border-left: 1px solid var(--white-03);
-    padding: 15px 40px;
   }
   &__navigation {
     height: 100%;

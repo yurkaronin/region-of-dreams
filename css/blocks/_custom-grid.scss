@@ -1,0 +1,18 @@
+.custom-grid {
+  display: grid;
+  gap: 32px;
+  grid-template-columns: repeat(12, 1fr);
+
+  &__col-9-12 {
+    grid-column-start: 9;
+    grid-column-end: 12;
+  }
+
+  @media (max-width: 1023px) {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  @media (max-width: 767px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+}

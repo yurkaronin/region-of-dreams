@@ -1,0 +1,15 @@
+.big {
+  display: block;
+  max-width: max-content;
+  margin: 0;
+  padding: 0;
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 120px;
+  line-height: 1;
+  color: #C08F53;
+  // background: linear-gradient(90deg, rgba(224, 178, 120, 0) 0%, #e0b278 100%);
+  // background-clip: text;
+  // -webkit-background-clip: text;
+  // -webkit-text-fill-color: transparent;
+}
