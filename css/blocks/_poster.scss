@@ -1,0 +1,157 @@
+.poster {
+  position: relative;
+  background-color: var(--poster);
+  max-width: max-content;
+  min-height: 552px;
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--white);
+
+  &__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__wrapper {
+    position: relative;
+    z-index: 2;
+    padding: 24px 40px;
+  }
+  &__title {
+    display: block;
+    margin: 0;
+    color: inherit;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.7;
+    text-transform: uppercase;
+  }
+  &__text {
+    display: block;
+    // margin: 0;
+    color: var(--white-06);
+  }
+  &__button {
+    max-width: 100%;
+    width: 100%;
+    margin-top: 20px;
+    padding: 20px 20px;
+  }
+}
+
+.poster-mobile {
+  position: relative;
+  background-color: var(--poster);
+  max-width: 100%;
+  min-height: 65px;
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--white);
+
+  &__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    img {
+      display: block;
+      width: auto;
+      height: 100%;
+      object-fit: cover;
+      object-position: left;
+    }
+  }
+  &__grid {
+    position: relative;
+    z-index: 2;
+    align-items: center;
+    gap: 24px;
+    display: grid;
+    grid-template-columns: 1fr 216px;
+  }
+  &__left {
+    padding: 10px 0;
+    padding-left: 210px;
+  }
+  &__right {
+    align-self: stretch;
+    height: 100%;
+  }
+
+  &__title {
+    display: block;
+    margin: 0;
+    color: inherit;
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+    line-height: 1.7;
+  }
+  &__text {
+    display: block;
+    margin: 0;
+    color: var(--white-06);
+  }
+
+  &__button {
+    max-width: 100%;
+    width: 100%;
+    padding: 20px 20px;
+    height: 100%;
+  }
+
+  @media (max-width: 1023px) {
+    &__left {
+      padding: 10px 0;
+      padding-left: 135px;
+    }
+  }
+  @media (max-width: 767px) {
+    min-height: 50px;
+    &__grid {
+      grid-template-columns: 1fr 50px;
+    }
+    &__left {
+      padding: 5px 0;
+      padding-left: 150px;
+    }
+
+    &__title {
+      font-size: 14px;
+      line-height: 1.4;
+    }
+    &__text {
+      display: none;
+    }
+    &__button {
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      span {
+        display: none;
+      }
+    }
+  }
+}
+
+.wrapper .poster-mobile {
+  margin-left: -48px;
+  margin-right: -48px;
+  max-width: calc(100% + (48px * 2));
+
+  @media (max-width: 1023px) {
+    margin-left: -40px;
+    margin-right: -40px;
+    max-width: calc(100% + (40px * 2));
+  }
+}
