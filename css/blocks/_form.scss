@@ -1,16 +1,13 @@
 .form {
+  max-width: 100%;
+  width: 100%;
   &__grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 24px 32px;
-    width: 100%;
+    margin-bottom: 32px;
     max-width: 100%;
-  }
-  &__list {
-    display: grid;
-    gap: 0;
-    grid-template-columns: repeat(2, 1fr);
-    max-width: max-content;
+    width: 100%;
   }
 
   label {
@@ -23,21 +20,25 @@
   }
 
   &__element {
+    position: relative;
     input {
       width: 100%;
       max-width: 100%;
-      padding: 16px 24px;
+      padding: 14px 20px;
+      padding-left: 56px;
       overflow: hidden;
       // outline: none;
-      border: 1px solid rgba(91, 99, 123, 0.3);
-      border-radius: 32px;
+      border: 2px solid var(--line);
+      border-radius: 0;
       font-weight: 400;
-      font-size: 18px;
-      color: var(--grey);
+      font-size: 15px;
+      color: var(--grey-07);
       transition: all 0.3s;
-      height: 56px;
+      height: 48px;
+      outline: none;
+
       &:hover {
-        border: 1px solid var(--grey);
+        border: 2px solid var(--gold);
       }
     }
     ::placeholder {
@@ -45,14 +46,23 @@
       font-size: inherit;
     }
   }
+  &__icon {
+    display: block;
+    width: 20px;
+    height: 20px;
+    top: 13px;
+    left: 24px;
+    position: absolute;
+    pointer-events: none;
+  }
 
   &__agree {
     font-weight: 400;
-    font-size: 14px;
-    color: #4a4a49;
+    font-size: 16px;
+    color: inherit;
 
     label {
-      padding-left: 48px;
+      padding-left: calc(24px + 16px);
       cursor: pointer;
       position: relative;
 
@@ -64,8 +74,8 @@
         content: "";
         background-color: var(--white);
 
-        border: 1px solid #ced1d8;
-        border-radius: 6px;
+        border: 1px solid var(--line);
+        border-radius: 0;
         width: 24px;
         height: 24px;
         transition: all 0.3s;
@@ -87,7 +97,7 @@
 
       &:hover {
         &::before {
-          border: 1px solid var(--grey);
+          border: 1px solid var(--gold);
         }
       }
     }
@@ -99,29 +109,57 @@
     a {
       text-decoration: underline;
       text-decoration-skip-ink: none;
-      color: var(--lightblue);
+      color: var(--gold);
+      transition: all 0.3s;
+      &:hover {
+        color: var(--light-gold);
+      }
     }
   }
 
+  &__bottom {
+    display: grid;
+    gap: 32px;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+  }
+  &__button {
+    max-width: 168px;
+    width: 100%;
+  }
 
   @media (max-width: 767px) {
     &__grid {
       grid-template-columns: repeat(1, 1fr);
       gap: 13px;
     }
-
-    &__button {
-      margin: 0 auto;
+    &__bottom {
+      gap: 24px;
+      grid-template-columns: 1fr;
     }
+
     &__element {
       input {
-        font-size: 14px;
-        padding: 12px 20px;
-        height: 50px;
+        height: 44px;
       }
     }
-    &__agree {
-      font-size: 14px;
+    &__button {
+      max-width: 100%;
+      width: 100%;
     }
+
+    //   &__button {
+    //     margin: 0 auto;
+    //   }
+    //   &__element {
+    //     input {
+    //       font-size: 14px;
+    //       padding: 12px 20px;
+    //       height: 50px;
+    //     }
+    //   }
+    //   &__agree {
+    //     font-size: 14px;
+    //   }
   }
 }
