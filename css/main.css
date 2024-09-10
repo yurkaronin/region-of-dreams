@@ -1061,7 +1061,7 @@ a:hover .icon-move__obj {
 
 .catalog-preview-list {
   display: grid;
-  gap: 32px;
+  gap: 20px 32px;
   grid-template-columns: repeat(2, 1fr);
   margin-top: 30px;
   margin-bottom: 50px;
@@ -1069,7 +1069,6 @@ a:hover .icon-move__obj {
 @media (max-width: 767px) {
   .catalog-preview-list {
     grid-template-columns: repeat(1, 1fr);
-    gap: 40px;
     margin-top: 25px;
     margin-bottom: 40px;
   }
@@ -1122,7 +1121,7 @@ a:hover .icon-move__obj {
   position: relative;
   width: 75%;
   margin-left: auto;
-  padding: 30px 30px 48px;
+  padding: 30px;
   margin-top: -75px;
   -webkit-transition: all 0.6s;
   transition: all 0.6s;
@@ -1190,6 +1189,14 @@ a:hover .icon-move__obj {
   opacity: 0.7;
   -webkit-transform: translateX(8px);
           transform: translateX(8px);
+}
+@media (max-width: 767px) {
+  .catalog-preview-card__details {
+    width: 85%;
+  }
+  .catalog-preview-card__specifications {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .swiper-button {
@@ -1818,7 +1825,7 @@ a:hover .icon-move__obj {
     grid-template-columns: repeat(1, 1fr);
   }
   .hero__top .custom-grid__col {
-    grid-column: initial;
+    grid-column: initial !important;
   }
   .hero__bottom .custom-grid {
     gap: 0 32px;
