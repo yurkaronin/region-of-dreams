@@ -1360,6 +1360,7 @@ a:hover .icon-move__obj {
 .form__button {
   max-width: 168px;
   width: 100%;
+  min-height: 56px;
 }
 @media (max-width: 767px) {
   .form__grid {
