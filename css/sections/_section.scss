@@ -1,0 +1,26 @@
+.section {
+  max-width: 100%;
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 65px;
+  // &--mod {
+  //   background-color: #f3f8fe;
+  // }
+  // &__head {
+  //   margin-bottom: 45px;
+  // }
+  &__grid {
+    display: grid;
+    gap: 0 32px;
+    grid-template-columns: 2fr 1fr;
+
+  }
+
+  @media (max-width: 1379px) {
+    &__grid {
+      gap: 0;
+      grid-template-columns: 1fr;
+
+    }
+  }
+}

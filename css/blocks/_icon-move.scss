@@ -1,4 +1,5 @@
 .icon-move {
+  transition: all 0.3s;
   svg {
     overflow: visible;
   }
@@ -24,8 +25,15 @@ a:hover {
     height: auto;
   }
 }
+a:hover {
+  .icon-move__obj {
+    opacity: 1;
+    height: auto;
+  }
+}
 
-.button:hover {
+.button:hover,
+a:hover {
   .icon-move__obj {
     transform: translateX(-8px);
   }

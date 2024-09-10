@@ -17,6 +17,9 @@
 @import "./blocks/receive";
 @import "./blocks/receive-group";
 @import "./blocks/poster";
+@import "./blocks/catalog-preview-list";
+@import "./blocks/catalog-preview-card";
+
 
 // @import "./blocks/container";
 
@@ -44,6 +47,7 @@
 
 // sections
 @import "./sections/header";
+@import "./sections/section";
 
 // @import "./sections/section";
 @import "./sections/mobile-nav";
