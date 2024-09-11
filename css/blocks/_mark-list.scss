@@ -1,0 +1,78 @@
+.mark-list {
+  display: grid;
+  gap: 0;
+  grid-template-columns: repeat(8, 1fr);
+  color: var(--white);
+  background: var(--grey);
+  margin-top: 27px;
+
+  &__item {
+    .mark-list__button {
+      border-top: 1px solid var(--white-02);
+    }
+
+    &:not(:last-of-type) {
+      .mark-list__button {
+        border-right: 1px solid var(--white-02);
+      }
+    }
+  }
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    width: 16px;
+    height: 16px;
+    color: var(--gold);
+    transition: all 0.3s;
+
+    svg {
+      path {
+        stroke: currentColor;
+      }
+    }
+  }
+
+  &__button {
+    padding: 10px 20px;
+    display: grid;
+    gap: 16px;
+    grid-template-columns: auto 1fr;
+    height: 47px;
+    transition: all 0.3s;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    color: inherit;
+    max-width: 100%;
+    width: 100%;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 16px;
+    text-align-last: left;
+
+    &:hover {
+      background-color: var(--gold);
+      border-color: transparent !important;
+
+      .mark-list__icon {
+        color: var(--light-gold);
+      }
+    }
+  }
+
+  @media (max-width: 1379px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  @media (max-width: 1023px) {
+    &__button {
+      font-size: 14px;
+      padding: 8px 10px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

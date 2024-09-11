@@ -1,0 +1,25 @@
+.custom-map {
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 0;
+  background: var(--grey);
+  color: var(--white);
+
+  .title {
+    color: inherit;
+  }
+  .text {
+    color: var(--white-07);
+  }
+
+  &__body {
+    height: 480px;
+    width: 100%;
+  }
+
+  @media (max-width: 767px) {
+    &__body {
+      height: 375px;
+    }
+  }
+}

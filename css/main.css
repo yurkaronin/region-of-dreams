@@ -11,6 +11,7 @@
   --white-07: rgba(255, 255, 255, 0.7);
   --white-06: rgba(255, 255, 255, 0.6);
   --white-03: rgba(255, 255, 255, 0.3);
+  --white-02: rgba(255, 255, 255, 0.2);
   --light-gold: #f4cb8e;
   --line: #d6d6d9;
   --poster: #418DC9;
@@ -1222,6 +1223,82 @@ a:hover .icon-move__obj {
   }
 }
 
+.mark-list {
+  display: grid;
+  gap: 0;
+  grid-template-columns: repeat(8, 1fr);
+  color: var(--white);
+  background: var(--grey);
+  margin-top: 27px;
+}
+.mark-list__item .mark-list__button {
+  border-top: 1px solid var(--white-02);
+}
+.mark-list__item:not(:last-of-type) .mark-list__button {
+  border-right: 1px solid var(--white-02);
+}
+.mark-list__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 16px;
+  height: 16px;
+  color: var(--gold);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.mark-list__icon svg path {
+  stroke: currentColor;
+}
+.mark-list__button {
+  padding: 10px 20px;
+  display: grid;
+  gap: 16px;
+  grid-template-columns: auto 1fr;
+  height: 47px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: transparent;
+  border: none;
+  color: inherit;
+  max-width: 100%;
+  width: 100%;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 16px;
+  -moz-text-align-last: left;
+       text-align-last: left;
+}
+.mark-list__button:hover {
+  background-color: var(--gold);
+  border-color: transparent !important;
+}
+.mark-list__button:hover .mark-list__icon {
+  color: var(--light-gold);
+}
+@media (max-width: 1379px) {
+  .mark-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (max-width: 1023px) {
+  .mark-list__button {
+    font-size: 14px;
+    padding: 8px 10px;
+  }
+}
+@media (max-width: 767px) {
+  .mark-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 .form {
   max-width: 100%;
   width: 100%;
@@ -1603,6 +1680,15 @@ a:hover .icon-move__obj {
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
   }
+}
+
+.js-map {
+  width: 100%;
+  height: 100%;
+}
+
+[class*=copyrights-pane] {
+  display: none !important;
 }
 
 .header {
@@ -2231,6 +2317,29 @@ a:hover .icon-move__obj {
   .promo__body {
     -webkit-transform: none;
             transform: none;
+  }
+}
+
+.custom-map {
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 0;
+  background: var(--grey);
+  color: var(--white);
+}
+.custom-map .title {
+  color: inherit;
+}
+.custom-map .text {
+  color: var(--white-07);
+}
+.custom-map__body {
+  height: 480px;
+  width: 100%;
+}
+@media (max-width: 767px) {
+  .custom-map__body {
+    height: 375px;
   }
 }
 
