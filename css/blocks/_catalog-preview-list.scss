@@ -4,6 +4,15 @@
   grid-template-columns: repeat(2, 1fr);
   margin-top: 30px;
   margin-bottom: 50px;
+  &--mod {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media (max-width: 1379px) {
+    &--mod {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
 
   @media (max-width: 767px) {
     grid-template-columns: repeat(1, 1fr);
