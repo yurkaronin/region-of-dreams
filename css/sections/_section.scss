@@ -3,12 +3,41 @@
   width: 100%;
   padding-top: 50px;
   padding-bottom: 65px;
+  &--mod {
+    background-color: var(--gold);
+    color: var(--white);
+    .title {
+      color: inherit;
+    }
+    .text {
+      color: inherit;
+    }
+  }
+  &--slider {
+    overflow: hidden;
+    max-width: 100%;
+    padding-bottom: 0;
+
+    .swiper {
+      overflow: initial;
+    }
+    .swiper-wrapper {
+      overflow: initial;
+    }
+    .swiper-slide {
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
+  }
   // &--mod {
   //   background-color: #f3f8fe;
   // }
   // &__head {
   //   margin-bottom: 45px;
   // }
+  &__header {
+    border-bottom: 1px solid var(--white-02);
+  }
   &__grid {
     display: grid;
     gap: 0 32px;
