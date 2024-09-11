@@ -1170,6 +1170,7 @@ a:hover .icon-move__obj {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 4px;
 }
 .catalog-preview-card__name .icon-move {
   margin-left: 16px;
@@ -1326,7 +1327,7 @@ a:hover .icon-move__obj {
   position: absolute;
   right: 100%;
   background-color: var(--gold);
-  width: 200px;
+  width: 500px;
   height: 100%;
 }
 .custom-slider .swiper-button {
@@ -1972,6 +1973,19 @@ a:hover .icon-move__obj {
 }
 .section--mod .text {
   color: inherit;
+}
+.section--mod .catalog-preview-card__details {
+  background-color: var(--gold);
+}
+.section--mod .catalog-preview-card__address {
+  color: var(--white);
+}
+.section--mod .icon-move path {
+  stroke: var(--light-gold);
+}
+.section--mod .swiper-button:hover {
+  background: var(--grey);
+  border-color: var(--grey);
 }
 .section--slider {
   overflow: hidden;

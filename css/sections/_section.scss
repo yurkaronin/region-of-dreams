@@ -12,6 +12,22 @@
     .text {
       color: inherit;
     }
+    .catalog-preview-card__details {
+      background-color: var(--gold);
+    }
+    .catalog-preview-card__address {
+      color: var(--white);
+    }
+
+    .icon-move path {
+      stroke: var(--light-gold);
+    }
+    .swiper-button {
+      &:hover {
+        background: var(--grey);
+        border-color: var(--grey);
+      }
+    }
   }
   &--slider {
     overflow: hidden;
