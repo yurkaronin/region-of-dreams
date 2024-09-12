@@ -2195,6 +2195,9 @@ a:hover .icon-move__obj {
 .section--mod .title {
   color: inherit;
 }
+.section--mod .title::after {
+  background-color: var(--light-gold);
+}
 .section--mod .text {
   color: inherit;
 }
@@ -2764,6 +2767,96 @@ a:hover .icon-move__obj {
 
 .faq {
   padding-top: 0;
+}
+
+.about-us {
+  padding-bottom: 0;
+}
+.about-us .title {
+  color: var(--grey);
+}
+.about-us .title::after {
+  background-color: var(--light-gold);
+}
+.about-us__grid {
+  display: grid;
+  gap: 32px;
+  grid-template-columns: repeat(2, 1fr);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.about-us__col {
+  padding: 32px;
+  height: 100%;
+}
+.about-us__left {
+  border-right: 1px solid var(--white-02);
+  border-left: 1px solid var(--white-02);
+}
+.about-us__right {
+  border-right: 1px solid var(--white-02);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.about-us__right .title {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 133%;
+  color: var(--grey);
+}
+.about-us__right .title__icon {
+  margin-left: 10px;
+}
+.about-us__right p {
+  font-size: 16px;
+}
+@media (max-width: 1379px) {
+  .about-us__grid {
+    gap: 0;
+    grid-template-columns: repeat(1, 1fr);
+    border-right: 1px solid var(--white-02);
+    border-left: 1px solid var(--white-02);
+    padding: 30px 30px 50px;
+  }
+  .about-us__col {
+    padding: 0;
+    height: initial;
+  }
+  .about-us__left {
+    border: none;
+    max-width: -webkit-max-content;
+    max-width: -moz-max-content;
+    max-width: max-content;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  .about-us__right {
+    border: none;
+  }
+}
+@media (max-width: 767px) {
+  .about-us__grid {
+    padding: 20px 20px 20px;
+  }
+  .about-us__left {
+    margin-bottom: 20px;
+  }
+  .about-us__right .title {
+    font-size: 16px;
+  }
+  .about-us__right p {
+    font-size: 15px;
+  }
 }
 
 .footer {

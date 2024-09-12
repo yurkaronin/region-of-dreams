@@ -3,14 +3,19 @@
   width: 100%;
   padding-top: 50px;
   padding-bottom: 65px;
+
   &--mod {
     background-color: var(--gold);
     color: var(--white);
     .title {
       color: inherit;
+      &::after {
+        background-color: var(--light-gold);
+      }
     }
     .text {
       color: inherit;
+
     }
     .catalog-preview-card__details {
       background-color: var(--gold);
@@ -35,6 +40,7 @@
     color: var(--white);
     .title {
       color: inherit;
+
     }
     .text {
       color: var(--white-07);
