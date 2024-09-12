@@ -264,6 +264,7 @@
       border-bottom: none;
       &:nth-child(1) {
         border-top: none;
+        border-right: 1px solid var(--white-03);
       }
     }
   }

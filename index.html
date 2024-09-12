@@ -233,7 +233,7 @@
             <span class="mobile-hide">+7 (928) 044-50-50</span>
           </a>
 
-          <a class="button button--icon button--border scroll-hide" href="tel:+79280445050">
+          <a class="button button--icon button--border scroll-hide" href="#" data-target="modal-call-back">
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M5.01936 10.9802C9.09767 15.0585 12.9936 15.9215 14.4311 16C15.35 14.6539 15.7382 13.5425 16 12.5491C15.0066 11.5818 13.5602 10.5946 12.2354 10.0392L10.6665 11.608C10.1306 11.4643 8.6602 10.8564 6.90189 9.09811C5.14403 7.34025 4.53574 5.86945 4.39199 5.33348L5.96085 3.76463C5.40536 2.43935 4.41817 0.9934 3.45095 0C2.45755 0.261328 1.34613 0.649548 0 1.56885C0.0785314 3.00593 0.941046 6.90145 5.01936 10.9802Z"
@@ -324,7 +324,7 @@
         <div class="mobile-contacts">
           <a class="mobile-contacts__link" href="tel:+79280445050">+7 (928) 044-50-50</a>
 
-          <a class="mobile-contacts__link mobile-contacts__link--icon" href="tel:+79280445050">
+          <a class="mobile-contacts__link mobile-contacts__link--icon" href="#" data-target="modal-call-back">
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M5.01936 10.9802C9.09767 15.0585 12.9936 15.9215 14.4311 16C15.35 14.6539 15.7382 13.5425 16 12.5491C15.0066 11.5818 13.5602 10.5946 12.2354 10.0392L10.6665 11.608C10.1306 11.4643 8.6602 10.8564 6.90189 9.09811C5.14403 7.34025 4.53574 5.86945 4.39199 5.33348L5.96085 3.76463C5.40536 2.43935 4.41817 0.9934 3.45095 0C2.45755 0.261328 1.34613 0.649548 0 1.56885C0.0785314 3.00593 0.941046 6.90145 5.01936 10.9802Z"
@@ -2769,7 +2769,96 @@
     </div>
   </footer>
 
-  <!-- Диалоговые окна  -->
+  <!-- Модальные окна  -->
+  <!-- Заказать звонок  -->
+  <section class="modal" id="modal-call-back">
+    <div class="wrapper">
+      <!-- основной блок контента -->
+      <div class="modal__body">
+        <div class="modal__top">
+          <h2 class="modal__title title title--mod">Позвоните мне</h2>
+          <p class="modal__text text">Заполните простую форму и наши специалисты перезвонят Вам и проконсультируют по любому вопросу, помогут выбрать наиболее подходящий вариант под Ваши пожелания</p>
+        </div>
+        <div class="modal__middle">
+          <div class="modal__form">
+            <div class="form">
+              <div class="form__body">
+                <form action="#">
+                  <div class="form__grid">
+                    <div class="form__col">
+                      <label for="user-name-3">Ваше имя</label>
+                      <div class="form__element">
+                        <span class="form__icon">
+                          <svg width="18" height="22" viewBox="0 0 18 22" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M17 9.48485V5.84848C17 1.76848 15.9215 1 11.6667 1H1V4.0303C1 5.43212 2.07437 7.06061 4.55556 7.06061M4.55556 7.06061C7.03674 7.06061 11.7407 7.06061 12.8519 7.06061C14.6047 7.06061 15.2222 8.67697 15.2222 10.0909C15.2222 10.3048 15.2222 10.1442 15.2222 10.697H17V13.0788C17 13.4842 16.8021 13.8624 16.472 14.0873L15.2222 14.9394C15.2222 14.9394 15.2222 16.4958 15.2222 16.7576C15.2222 19.1061 12.1852 20.1291 11.6667 20.3939C11.1481 20.6588 10.2593 21 9.2963 21C8.33333 21 7.44444 20.6588 6.92593 20.3939C6.40741 20.1291 3.37037 19.1061 3.37037 16.7576C3.37037 16.4758 3.37037 14.9394 3.37037 14.9394L2.1206 14.0873C1.79052 13.8624 1.59259 13.4842 1.59259 13.0788V10.697H3.37037C3.37037 10.2424 3.37037 9.82485 3.37037 9.48485C3.37037 8.41515 3.81481 7.64182 4.55556 7.06061Z"
+                              stroke="#C08F53" stroke-width="2" stroke-miterlimit="10" />
+                            <path
+                              d="M1.59259 5.84863C1.32119 6.12621 1 6.55591 1 7.66681C1 8.10863 1 8.68318 1 8.87894C1 9.90197 1.66667 10.4886 2.18519 10.6971"
+                              stroke="#C08F53" stroke-width="2" stroke-miterlimit="10" />
+                            <path d="M15.2222 10.697V11.9091" stroke="#C08F53" stroke-width="2"
+                              stroke-miterlimit="10" />
+                            <path d="M3.37042 10.697V11.9091" stroke="#C08F53" stroke-width="2"
+                              stroke-miterlimit="10" />
+                          </svg>
+                        </span>
+                        <input type="text" name="user-name" placeholder="Представьтесь, пожалуйста" id="user-name-3"
+                          required>
+                      </div>
+                    </div>
+                    <div class="form__col">
+                      <label for="user-phone-3">Телефон</label>
+                      <div class="form__element">
+                        <span class="form__icon">
+                          <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M7.64678 14.3527C12.2349 18.9408 16.6178 19.9117 18.235 20C19.2688 18.4856 19.7055 17.2353 20 16.1177C18.8824 15.0296 17.2552 13.919 15.7648 13.294L13.9998 15.059C13.3969 14.8973 11.7427 14.2135 9.76463 12.2354C7.78703 10.2578 7.10271 8.60313 6.94099 8.00017L8.70595 6.23521C8.08103 4.74427 6.97044 3.11758 5.88231 2C4.76474 2.29399 3.51439 2.73074 2 3.76496C2.08835 5.38168 3.05868 9.76413 7.64678 14.3527Z"
+                              stroke="#C08F53" stroke-width="2" stroke-miterlimit="10" />
+                          </svg>
+
+                        </span>
+                        <input type="tel" name="user-phone" placeholder="Как с Вами связаться?" id="user-phone-3"
+                          required>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form__bottom">
+                    <div class="form__agree">
+                      <input class="visually-hidden" type="checkbox" name="user-agree" id="user-agree-3" required=""
+                        checked="">
+                      <label for="user-agree-3">Согласен(сна) с условиями <a href="#">Политикой
+                          конфиденциальности</a></label>
+                    </div>
+                    <button class="form__button button button--icon" type="submit">
+                      <span class="icon-move">
+                        <svg width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path class="icon-move__obj" d="M8 4.99999L0 5" stroke="#F4CB8E" stroke-width="2"></path>
+                          <path d="M12 9L16 5M16 5L12 1M16 5L-1.74846e-07 5" stroke="#F4CB8E" stroke-width="2"></path>
+                        </svg>
+                      </span>
+                      <span>Отправить</span></button>
+                  </div>
+
+                </form>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Кнопка закрытия окна  -->
+        <button class="modal__close js-close-modal " type="button" title="Закрыть окно">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 1L17 17" stroke="#03B6FC" stroke-width="2" />
+            <path d="M17 1L1 17" stroke="#03B6FC" stroke-width="2" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </section>
 
   <!-- Скрипты  -->
 
@@ -2784,10 +2873,11 @@
   <script src="./libs/swiper-bundle.min.js"></script>
   <script src="./libs/imask.js"></script>
 
+  <!-- кастомные скрипты  -->
   <script src="./js/parts/header-sticky.js"></script>
   <script src="./js/parts/menu-open.js"></script>
   <script src="./js/parts/accordion.js"></script>
-  <!-- <script src="./js/parts/modals.js"></script> -->
+  <script src="./js/parts/modals.js"></script>
   <script src="./js/parts/map.js"></script>
   <script src="./js/parts/map-contacts.js"></script>
   <script src="./js/parts/form-validation.js"></script>
@@ -2796,7 +2886,7 @@
   <!-- Слайдеры  -->
   <script src="./js/swiper-sliders.js"></script>
 
-
+  <!-- приоритетный файл  -->
   <script src="./js/main.js"></script>
 
 

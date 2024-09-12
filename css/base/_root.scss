@@ -13,10 +13,7 @@
 
   // --custom-1: rgba(91, 99, 123, 0.3);
 
-  // --modal-bg: rgba(0, 87, 190, 0.7);
-  // --modal-icon: #03b6fc;
-  // --modal-hover: #0057be;
-  // --modal-text: --text;
+
 
   --font-family: "Montserrat", sans-serif;
   --second-family: "Merriweather", sans-serif;
@@ -40,15 +37,13 @@
   --header-height: 125px;
 
   --swiper-navigation-size: 88px;
-  // --swiper-navigation-sides-offset: 0;
-  // --swiper-navigation-top-offset: 50%;
-  // --swiper-pagination-bullet-horizontal-gap: 8px;
-  // --swiper-pagination-bullet-width: 8px;
-  // --swiper-pagination-bullet-height: 8px;
-  // --swiper-pagination-color: #fff;
-  // --swiper-pagination-bullet-inactive-color: transparent;
-  // --swiper-pagination-bullet-inactive-opacity: 1;
-  // --swiper-pagination-bottom: 80px;
+
+  --modal-bg: rgba(51, 52, 65, 0.7);
+  --modal-icon: #C08F53;
+  --modal-hover: #C08F53;
+  --modal-text: --text;
+  --modal-body: #333441;
+  --modal-border: var(--white-02);
 
   @media (max-width: 1379px) {
     --swiper-navigation-size: 80px;
